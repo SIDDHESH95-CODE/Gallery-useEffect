@@ -3,14 +3,14 @@ import GalleryCard from "./components/GalleryCard";
 import { useState } from "react";
 
 function App() {
-
-  const [imageData, setImageData] = useState();
+  const [imageData, setImageData] = useState([]);
 
   async function getData() {
     const URL = "https://picsum.photos/v2/list?page=3&limit=10";
     const { data } = await axios.get(URL);
     // const data = res.data;
-    console.log(data);
+    // console.log(data);
+    setImageData(data);
   }
 
   return (
@@ -21,7 +21,12 @@ function App() {
       >
         Get Data
       </button>
-      <GalleryCard />
+      <div className="cards flex justify-start gap-5 flex-wrap">
+        {imageData.map((img, idx) => <GalleryCard key={idx} data={img} /> )}
+        {/* <GalleryCard />
+        <GalleryCard />
+        <GalleryCard /> */}
+      </div>
     </div>
   );
 }
