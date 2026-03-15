@@ -1,16 +1,72 @@
-# React + Vite
+# React Image Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **ReactJS gallery project** that fetches and displays images on the homepage using an external API. The application dynamically loads images and presents them in a clean gallery layout.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Fetch images from an external API
+* Display images dynamically on the homepage
+* Responsive gallery layout
+* Built using React functional components and hooks
+* Clean and simple UI
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* ReactJS
+* JavaScript (ES6+)
+* CSS
+* External Image API
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+```
+
+2. Navigate to the project folder
+
+```bash
+cd your-repo-name
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Run the development server
+
+```bash
+npm start
+```
+
+The app will run at:
+
+```
+http://localhost:3000
+```
+
+## 📂 Project Structure
+
+```
+src/
+ ├── components/
+ ├── App.js
+ ├── index.js
+ └── styles/
+```
+
+## 🌐 API
+
+Images are fetched from an external API and rendered dynamically on the homepage.
+
+## 📸 Preview
+
+A responsive gallery that automatically loads images from the API.
+
+## 📄 License
+
+Project created by Siddhesh.
